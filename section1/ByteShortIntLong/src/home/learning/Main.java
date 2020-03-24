@@ -28,5 +28,18 @@ public class Main {
         short shortMaxvalue = Short.MAX_VALUE;
         System.out.println("Short Minimum Value = " + shortMinValue);
         System.out.println("Short Maximum Value = " + shortMaxvalue);
+
+        int myTotal = ( myMinValue /2);
+
+        byte myNewByteValue = (byte)( byteMinValue / 2);
+
+        short myNewShortValue =(short) (shortMinValue /2);
+
+        byte valueOne = 6;
+        short valueTwo =12;
+        int valueThree =1280;
+        long finalvalue =50000 + (10* (valueOne + valueTwo + valueThree));
+
+        System.out.println(finalvalue);
     }
 }
