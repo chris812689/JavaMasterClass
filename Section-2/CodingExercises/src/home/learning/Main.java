@@ -3,13 +3,14 @@ package home.learning;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
     }
+
     public static long toMilesPerHour(double kilometersPerHour) {
-        if( kilometersPerHour <= 0 ){
+        if (kilometersPerHour <= 0) {
             return -1;
-        } else{
-            return Math.round(kilometersPerHour/1.609);
+        } else {
+            return Math.round(kilometersPerHour / 1.609);
 
         }
     }
@@ -23,25 +24,28 @@ public class Main {
         }
     }
 
-    public static void printMegaBytesAndKiloBytes(int kiloBytes){
-        if (kiloBytes <= 0){
+    public static void printMegaBytesAndKiloBytes(int kiloBytes) {
+        if (kiloBytes <= 0) {
             System.out.println("Invalid Value");
-        }else{
-            int megaBytes = kiloBytes /1024;
+        } else {
+            int megaBytes = kiloBytes / 1024;
             int kiloBytesRemainder = kiloBytes % 1024;
-            System.out.println(kiloBytes + "KB = " + megaBytes +" MB and "+ kiloBytesRemainder + "KB");
+            System.out.println(kiloBytes + "KB = " + megaBytes + " MB and " + kiloBytesRemainder + "KB");
         }
     }
-    public static boolean shouldWakeUp (boolean barking, int hourOfDay){
-        if(barking == false){
+
+    public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
+        if (barking == false) {
             return false;
         }
-        if (hourOfDay > 23 | hourOfDay < 0 ){
+        if (hourOfDay > 23 | hourOfDay < 0) {
             return false;
-        } else if (hourOfDay < 8 | hourOfDay >=23){
+        } else if (hourOfDay < 8 | hourOfDay >= 23) {
             return true;
-        } return false;
+        }
+        return false;
     }
+
     public static boolean isLeapYear(int year) {
 
         if (year >= 1 && year <= 9999) {
@@ -54,3 +58,5 @@ public class Main {
         }
         return false;
     }
+
+}
